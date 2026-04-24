@@ -1,8 +1,5 @@
-<div align="center">
+# [ACL 2026] When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval
 
-# When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval
-
-Code implementation for our ACL 2026 paper<br>
 Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
@@ -11,25 +8,23 @@ Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
 
 <table>
   <tr>
-    <td align="center" width="33%">
-      <img src="assets/figures/teaser_diagram.png" alt="Paper Figure 1: study protocol" width="100%">
+    <td align="center" width="30%" style="border: 0;">
+      <img src="assets/figures/teaser_diagram.png" alt="Study protocol: monolingual, word-mixed, and embedding-mixed query representations" width="100%">
       <br>
-      <sub>Paper Fig. 1: study protocol</sub>
+      <sub>Why we compare monolingual, word-mixed, and embedding-mixed queries.</sub>
     </td>
-    <td align="center" width="33%">
-      <img src="assets/figures/embed-mix_diagram.png" alt="Paper Figure 2: embedding-level query mixing" width="100%">
+    <td align="center" width="40%" style="border: 0;">
+      <img src="assets/figures/embed-mix_diagram.png" alt="Embedding-level query mixing by interpolation and normalization" width="100%">
       <br>
-      <sub>Paper Fig. 2: embedding mix</sub>
+      <sub>How two query embeddings are interpolated before retrieval.</sub>
     </td>
-    <td align="center" width="33%">
-      <img src="assets/figures/triad_ENZH.png" alt="EN-ZH query mixing retrieval curves" width="100%">
+    <td align="center" width="30%" style="border: 0;">
+      <img src="assets/figures/triad_ENZH.png" alt="EN-ZH retrieval performance across query mixing ratios" width="100%">
       <br>
-      <sub>Main EN-ZH curve</sub>
+      <sub>How retrieval changes as the English-Chinese mixing ratio moves across document settings.</sub>
     </td>
   </tr>
 </table>
-
-</div>
 
 This repository contains the code implementation for our paper on mixed-language queries in multilingual dense retrieval.
 
