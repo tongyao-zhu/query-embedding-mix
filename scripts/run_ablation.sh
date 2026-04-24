@@ -21,7 +21,7 @@ DATA_ROOT="${DATA_ROOT:-$REPO_ROOT/data}"
 RUN_ROOT="${RUN_ROOT:-$REPO_ROOT/runs}"
 RESULT_ROOT="${RESULT_ROOT:-$REPO_ROOT/results/mmarco_full}"
 QUERY_DIR="${QUERY_DIR:-$DATA_ROOT/mmarco_dev}"
-COMMON_QIDS="${COMMON_QIDS:-${QUERY_DIR}/queries_cm_5_bands_5-mini/qids-common.tsv}"
+COMMON_QIDS="${COMMON_QIDS:-$REPO_ROOT/configs/qid_lists/qids-common.tsv}"
 
 BILINGUAL_SCRIPT="${PY_ROOT}/onepass_bilingual_mix_hub_custom_lang.py"
 MONO_SCRIPT="${PY_ROOT}/onepass_dense_mix_run_custom_lang.py"

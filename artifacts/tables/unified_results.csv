@@ -1,0 +1,190 @@
+pair,doc_mix,mix_ratio,method,metric,mean,dataset,docs_size,model,source_file
+EN-ZH,EN + ZH docs,0.0,embed,ndcg@10,0.8502023481253314,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-223340-agg.csv
+EN-ZH,EN + ZH docs,10.0,embed,ndcg@10,0.8488892095636467,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-223402-agg.csv
+EN-ZH,EN + ZH docs,30.0,embed,ndcg@10,0.8415895234696964,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-223422-agg.csv
+EN-ZH,EN + ZH docs,50.0,embed,ndcg@10,0.8275830364962334,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-223443-agg.csv
+EN-ZH,EN + ZH docs,70.0,embed,ndcg@10,0.8152755948019252,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-223505-agg.csv
+EN-ZH,EN + ZH docs,90.0,embed,ndcg@10,0.8009636103144684,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-223526-agg.csv
+EN-ZH,EN + ZH docs,100.0,embed,ndcg@10,0.7914587220598633,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-223548-agg.csv
+EN-ZH,EN + ZH docs,0.0,embed,mrr@10,0.821025863175459,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-223340-agg.csv
+EN-ZH,EN + ZH docs,10.0,embed,mrr@10,0.8187147028622771,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-223402-agg.csv
+EN-ZH,EN + ZH docs,30.0,embed,mrr@10,0.8105894087194632,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-223422-agg.csv
+EN-ZH,EN + ZH docs,50.0,embed,mrr@10,0.7953669832712964,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-223443-agg.csv
+EN-ZH,EN + ZH docs,70.0,embed,mrr@10,0.7821532858426395,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-223505-agg.csv
+EN-ZH,EN + ZH docs,90.0,embed,mrr@10,0.7682523638386181,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-223526-agg.csv
+EN-ZH,EN + ZH docs,100.0,embed,mrr@10,0.7582341269841273,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-223548-agg.csv
+EN-ZH,EN + ZH docs,0.0,embed,r@10,0.9526617250673854,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-223340-agg.csv
+EN-ZH,EN + ZH docs,10.0,embed,r@10,0.954009433962264,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-223402-agg.csv
+EN-ZH,EN + ZH docs,30.0,embed,r@10,0.9494047619047618,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-223422-agg.csv
+EN-ZH,EN + ZH docs,50.0,embed,r@10,0.94098158131177,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-223443-agg.csv
+EN-ZH,EN + ZH docs,70.0,embed,r@10,0.931547619047619,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-223505-agg.csv
+EN-ZH,EN + ZH docs,90.0,embed,r@10,0.9165543575920934,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-223526-agg.csv
+EN-ZH,EN + ZH docs,100.0,embed,r@10,0.9086365678346808,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-223548-agg.csv
+EN-ZH,EN + ZH docs,0.0,word,ndcg@10,0.8501942853427531,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm0_base_dev_20251029-194339-agg.csv
+EN-ZH,EN + ZH docs,10.0,word,ndcg@10,0.8247505785592391,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm0-20_base_dev_20251029-194350-agg.csv
+EN-ZH,EN + ZH docs,30.0,word,ndcg@10,0.8171569539845778,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm20-40_base_dev_20251029-194400-agg.csv
+EN-ZH,EN + ZH docs,50.0,word,ndcg@10,0.7969909139802203,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm40-60_base_dev_20251029-194410-agg.csv
+EN-ZH,EN + ZH docs,70.0,word,ndcg@10,0.7852795958935238,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm60-80_base_dev_20251029-194419-agg.csv
+EN-ZH,EN + ZH docs,90.0,word,ndcg@10,0.7859984560412361,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm80-100_base_dev_20251029-194429-agg.csv
+EN-ZH,EN + ZH docs,100.0,word,ndcg@10,0.7913329008511321,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm100_base_dev_20251029-194442-agg.csv
+EN-ZH,EN + ZH docs,0.0,word,mrr@10,0.8210183759038207,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm0_base_dev_20251029-194339-agg.csv
+EN-ZH,EN + ZH docs,10.0,word,mrr@10,0.7900841783254183,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm0-20_base_dev_20251029-194350-agg.csv
+EN-ZH,EN + ZH docs,30.0,word,mrr@10,0.784489047191204,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm20-40_base_dev_20251029-194400-agg.csv
+EN-ZH,EN + ZH docs,50.0,word,mrr@10,0.7610308903435594,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm40-60_base_dev_20251029-194410-agg.csv
+EN-ZH,EN + ZH docs,70.0,word,mrr@10,0.7498077375604335,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm60-80_base_dev_20251029-194419-agg.csv
+EN-ZH,EN + ZH docs,90.0,word,mrr@10,0.7520429555469988,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm80-100_base_dev_20251029-194429-agg.csv
+EN-ZH,EN + ZH docs,100.0,word,mrr@10,0.7580806379155438,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm100_base_dev_20251029-194442-agg.csv
+EN-ZH,EN + ZH docs,0.0,word,r@10,0.9526617250673854,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm0_base_dev_20251029-194339-agg.csv
+EN-ZH,EN + ZH docs,10.0,word,r@10,0.9421608265947888,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm0-20_base_dev_20251029-194350-agg.csv
+EN-ZH,EN + ZH docs,30.0,word,r@10,0.9310422282120394,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm20-40_base_dev_20251029-194400-agg.csv
+EN-ZH,EN + ZH docs,50.0,word,r@10,0.9204851752021562,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm40-60_base_dev_20251029-194410-agg.csv
+EN-ZH,EN + ZH docs,70.0,word,r@10,0.9097596585804134,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm60-80_base_dev_20251029-194419-agg.csv
+EN-ZH,EN + ZH docs,90.0,word,r@10,0.904424977538185,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm80-100_base_dev_20251029-194429-agg.csv
+EN-ZH,EN + ZH docs,100.0,word,r@10,0.908636567834681,mmarco,100000,bge-m3,mmarco-100000-bilingual-en-zh-5bands-bge-m3/cm100_base_dev_20251029-194442-agg.csv
+EN-ZH,EN docs,0.0,embed,ndcg@10,0.8531912620356172,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-203214-agg.csv
+EN-ZH,EN docs,10.0,embed,ndcg@10,0.8510505822294008,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-203229-agg.csv
+EN-ZH,EN docs,30.0,embed,ndcg@10,0.8439253733666433,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-203244-agg.csv
+EN-ZH,EN docs,50.0,embed,ndcg@10,0.8317026019156152,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-203259-agg.csv
+EN-ZH,EN docs,70.0,embed,ndcg@10,0.7968659832325142,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-203313-agg.csv
+EN-ZH,EN docs,90.0,embed,ndcg@10,0.7214965181933417,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-203328-agg.csv
+EN-ZH,EN docs,100.0,embed,ndcg@10,0.6700505234533332,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-203342-agg.csv
+EN-ZH,EN docs,0.0,embed,mrr@10,0.8221551041800376,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-203214-agg.csv
+EN-ZH,EN docs,10.0,embed,mrr@10,0.819858383605015,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-203229-agg.csv
+EN-ZH,EN docs,30.0,embed,mrr@10,0.8110923929320162,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-203244-agg.csv
+EN-ZH,EN docs,50.0,embed,mrr@10,0.7988793158772949,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-203259-agg.csv
+EN-ZH,EN docs,70.0,embed,mrr@10,0.7616838873914349,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-203313-agg.csv
+EN-ZH,EN docs,90.0,embed,mrr@10,0.6794014461130375,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-203328-agg.csv
+EN-ZH,EN docs,100.0,embed,mrr@10,0.6273592927737139,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-203342-agg.csv
+EN-ZH,EN docs,0.0,embed,r@10,0.9609164420485176,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-203214-agg.csv
+EN-ZH,EN docs,10.0,embed,r@10,0.9588948787061996,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-203229-agg.csv
+EN-ZH,EN docs,30.0,embed,r@10,0.9551886792452832,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-203244-agg.csv
+EN-ZH,EN docs,50.0,embed,r@10,0.9450808625336928,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-203259-agg.csv
+EN-ZH,EN docs,70.0,embed,r@10,0.9187443845462712,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-203313-agg.csv
+EN-ZH,EN docs,90.0,embed,r@10,0.8639375561545374,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-203328-agg.csv
+EN-ZH,EN docs,100.0,embed,r@10,0.8182839173405212,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-203342-agg.csv
+EN-ZH,EN docs,0.0,word,ndcg@10,0.8531917084225831,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/0_dev_20250831-140407-agg.csv
+EN-ZH,EN docs,10.0,word,ndcg@10,0.8021377400996683,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/0-20_dev_20250831-155820-agg.csv
+EN-ZH,EN docs,30.0,word,ndcg@10,0.7879984018480867,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/20-40_dev_20250831-175537-agg.csv
+EN-ZH,EN docs,50.0,word,ndcg@10,0.7515308407804732,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/40-60_dev_20250901-043301-agg.csv
+EN-ZH,EN docs,70.0,word,ndcg@10,0.7293159179669674,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/60-80_dev_20250901-063036-agg.csv
+EN-ZH,EN docs,90.0,word,ndcg@10,0.7122967801385544,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/80-100_dev_20250901-083242-agg.csv
+EN-ZH,EN docs,100.0,word,ndcg@10,0.670553723037478,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/100_dev_20250831-120436-agg.csv
+EN-ZH,EN docs,0.0,word,mrr@10,0.8222265006631592,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/0_dev_20250831-140407-agg.csv
+EN-ZH,EN docs,10.0,word,mrr@10,0.7654598789201227,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/0-20_dev_20250831-155820-agg.csv
+EN-ZH,EN docs,30.0,word,mrr@10,0.7526903371411463,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/20-40_dev_20250831-175537-agg.csv
+EN-ZH,EN docs,50.0,word,mrr@10,0.713027852650495,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/40-60_dev_20250901-043301-agg.csv
+EN-ZH,EN docs,70.0,word,mrr@10,0.6903665554272029,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/60-80_dev_20250901-063036-agg.csv
+EN-ZH,EN docs,90.0,word,mrr@10,0.6699083878834559,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/80-100_dev_20250901-083242-agg.csv
+EN-ZH,EN docs,100.0,word,mrr@10,0.6272189064304975,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/100_dev_20250831-120436-agg.csv
+EN-ZH,EN docs,0.0,word,r@10,0.9609164420485176,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/0_dev_20250831-140407-agg.csv
+EN-ZH,EN docs,10.0,word,r@10,0.9241913746630728,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/0-20_dev_20250831-155820-agg.csv
+EN-ZH,EN docs,30.0,word,r@10,0.9093665768194068,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/20-40_dev_20250831-175537-agg.csv
+EN-ZH,EN docs,50.0,word,r@10,0.8882524707996405,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/40-60_dev_20250901-043301-agg.csv
+EN-ZH,EN docs,70.0,word,r@10,0.8616913746630727,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/60-80_dev_20250901-063036-agg.csv
+EN-ZH,EN docs,90.0,word,r@10,0.8568620844564242,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/80-100_dev_20250901-083242-agg.csv
+EN-ZH,EN docs,100.0,word,r@10,0.8182839173405212,mmarco,100000,bge-m3,mmarco-100000-english-en-zh-5bands-bge-m3/100_dev_20250831-120436-agg.csv
+EN-ZH,ZH docs,0.0,embed,ndcg@10,0.677312721004679,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-202944-agg.csv
+EN-ZH,ZH docs,10.0,embed,ndcg@10,0.7140751165320004,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-203000-agg.csv
+EN-ZH,ZH docs,30.0,embed,ndcg@10,0.7705129104357185,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-203017-agg.csv
+EN-ZH,ZH docs,50.0,embed,ndcg@10,0.7951929099316132,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-203033-agg.csv
+EN-ZH,ZH docs,70.0,embed,ndcg@10,0.7993901513808355,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-203050-agg.csv
+EN-ZH,ZH docs,90.0,embed,ndcg@10,0.7869024857372926,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-203105-agg.csv
+EN-ZH,ZH docs,100.0,embed,ndcg@10,0.7791911272026063,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-203121-agg.csv
+EN-ZH,ZH docs,0.0,embed,mrr@10,0.6347109913147657,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-202944-agg.csv
+EN-ZH,ZH docs,10.0,embed,mrr@10,0.670691342574766,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-203000-agg.csv
+EN-ZH,ZH docs,30.0,embed,mrr@10,0.7294166880588719,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-203017-agg.csv
+EN-ZH,ZH docs,50.0,embed,mrr@10,0.757165853762889,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-203033-agg.csv
+EN-ZH,ZH docs,70.0,embed,mrr@10,0.7631679715911519,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-203050-agg.csv
+EN-ZH,ZH docs,90.0,embed,mrr@10,0.7485004064518893,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-203105-agg.csv
+EN-ZH,ZH docs,100.0,embed,mrr@10,0.7408112458820012,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-203121-agg.csv
+EN-ZH,ZH docs,0.0,embed,r@10,0.8253032345013477,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251011-202944-agg.csv
+EN-ZH,ZH docs,10.0,embed,r@10,0.8643306379155434,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251011-203000-agg.csv
+EN-ZH,ZH docs,30.0,embed,r@10,0.9126796945193172,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251011-203017-agg.csv
+EN-ZH,ZH docs,50.0,embed,r@10,0.9229559748427671,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251011-203033-agg.csv
+EN-ZH,ZH docs,70.0,embed,r@10,0.9229559748427671,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251011-203050-agg.csv
+EN-ZH,ZH docs,90.0,embed,r@10,0.915880503144654,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251011-203105-agg.csv
+EN-ZH,ZH docs,100.0,embed,r@10,0.9084681042228212,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251011-203121-agg.csv
+EN-ZH,ZH docs,0.0,word,ndcg@10,0.6773738339793519,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/0_dev_20250831-141112-agg.csv
+EN-ZH,ZH docs,10.0,word,ndcg@10,0.7152818672028006,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/0-20_dev_20250831-160825-agg.csv
+EN-ZH,ZH docs,30.0,word,ndcg@10,0.7241727403246832,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/20-40_dev_20250831-180635-agg.csv
+EN-ZH,ZH docs,50.0,word,ndcg@10,0.721735507535846,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/40-60_dev_20250831-200458-agg.csv
+EN-ZH,ZH docs,70.0,word,ndcg@10,0.7234736964125035,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/60-80_dev_20250831-220250-agg.csv
+EN-ZH,ZH docs,90.0,word,ndcg@10,0.7407320948610147,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/80-100_dev_20250901-000113-agg.csv
+EN-ZH,ZH docs,100.0,word,ndcg@10,0.7794460138745141,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/100_dev_20250831-120827-agg.csv
+EN-ZH,ZH docs,0.0,word,mrr@10,0.6353294934325939,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/0_dev_20250831-141112-agg.csv
+EN-ZH,ZH docs,10.0,word,mrr@10,0.6737375925212858,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/0-20_dev_20250831-160825-agg.csv
+EN-ZH,ZH docs,30.0,word,mrr@10,0.6822107773927191,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/20-40_dev_20250831-180635-agg.csv
+EN-ZH,ZH docs,50.0,word,mrr@10,0.6797070872374119,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/40-60_dev_20250831-200458-agg.csv
+EN-ZH,ZH docs,70.0,word,mrr@10,0.6816527082531137,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/60-80_dev_20250831-220250-agg.csv
+EN-ZH,ZH docs,90.0,word,mrr@10,0.7004807898001976,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/80-100_dev_20250901-000113-agg.csv
+EN-ZH,ZH docs,100.0,word,mrr@10,0.7408936058700214,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/100_dev_20250831-120827-agg.csv
+EN-ZH,ZH docs,0.0,word,r@10,0.8246293800539084,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/0_dev_20250831-141112-agg.csv
+EN-ZH,ZH docs,10.0,word,r@10,0.8543912848158131,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/0-20_dev_20250831-160825-agg.csv
+EN-ZH,ZH docs,30.0,word,r@10,0.866857592093441,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/20-40_dev_20250831-180635-agg.csv
+EN-ZH,ZH docs,50.0,word,r@10,0.8648921832884096,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/40-60_dev_20250831-200458-agg.csv
+EN-ZH,ZH docs,70.0,word,r@10,0.8646675651392631,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/60-80_dev_20250831-220250-agg.csv
+EN-ZH,ZH docs,90.0,word,r@10,0.8784815813117699,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/80-100_dev_20250901-000113-agg.csv
+EN-ZH,ZH docs,100.0,word,r@10,0.9084681042228212,mmarco,100000,bge-m3,mmarco-100000-chinese-en-zh-5bands-bge-m3/100_dev_20250831-120827-agg.csv
+ID-ZH,ID + ZH docs,0.0,embed,ndcg@10,0.798102686964179,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251012-190034-agg.csv
+ID-ZH,ID + ZH docs,10.0,embed,ndcg@10,0.8035250647290255,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251012-190056-agg.csv
+ID-ZH,ID + ZH docs,30.0,embed,ndcg@10,0.8079013258771611,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251012-190119-agg.csv
+ID-ZH,ID + ZH docs,50.0,embed,ndcg@10,0.8026462538493433,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251012-190141-agg.csv
+ID-ZH,ID + ZH docs,70.0,embed,ndcg@10,0.8037558419231252,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251012-190203-agg.csv
+ID-ZH,ID + ZH docs,90.0,embed,ndcg@10,0.7964574007051023,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251012-190225-agg.csv
+ID-ZH,ID + ZH docs,100.0,embed,ndcg@10,0.7882992153080113,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251012-190248-agg.csv
+ID-ZH,ID + ZH docs,0.0,embed,mrr@10,0.7626612437427805,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251012-190034-agg.csv
+ID-ZH,ID + ZH docs,10.0,embed,mrr@10,0.7678809416848501,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251012-190056-agg.csv
+ID-ZH,ID + ZH docs,30.0,embed,mrr@10,0.7736811705814406,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251012-190119-agg.csv
+ID-ZH,ID + ZH docs,50.0,embed,mrr@10,0.7671533393231517,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251012-190141-agg.csv
+ID-ZH,ID + ZH docs,70.0,embed,mrr@10,0.7702330145894839,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251012-190203-agg.csv
+ID-ZH,ID + ZH docs,90.0,embed,mrr@10,0.7630441642065634,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251012-190225-agg.csv
+ID-ZH,ID + ZH docs,100.0,embed,mrr@10,0.7553472489624784,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251012-190248-agg.csv
+ID-ZH,ID + ZH docs,0.0,embed,r@10,0.9210467205750223,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251012-190034-agg.csv
+ID-ZH,ID + ZH docs,10.0,embed,r@10,0.926774483378257,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251012-190056-agg.csv
+ID-ZH,ID + ZH docs,30.0,embed,r@10,0.925595238095238,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251012-190119-agg.csv
+ID-ZH,ID + ZH docs,50.0,embed,r@10,0.9233490566037738,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251012-190141-agg.csv
+ID-ZH,ID + ZH docs,70.0,embed,r@10,0.9211028751123091,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251012-190203-agg.csv
+ID-ZH,ID + ZH docs,90.0,embed,r@10,0.915038185085355,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251012-190225-agg.csv
+ID-ZH,ID + ZH docs,100.0,embed,r@10,0.9042565139263252,mmarco,100000,bge-m3,mmarco-100000-bilingual-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251012-190248-agg.csv
+ID-ZH,ID docs,0.0,embed,ndcg@10,0.7967087121530654,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251013-031903-agg.csv
+ID-ZH,ID docs,10.0,embed,ndcg@10,0.8001946127150882,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251013-031918-agg.csv
+ID-ZH,ID docs,30.0,embed,ndcg@10,0.8006602278896506,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251013-031932-agg.csv
+ID-ZH,ID docs,50.0,embed,ndcg@10,0.7912882835765849,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251013-031948-agg.csv
+ID-ZH,ID docs,70.0,embed,ndcg@10,0.7610962407884121,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251013-032003-agg.csv
+ID-ZH,ID docs,90.0,embed,ndcg@10,0.686884911679835,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251013-032017-agg.csv
+ID-ZH,ID docs,100.0,embed,ndcg@10,0.6386782317761149,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251013-032032-agg.csv
+ID-ZH,ID docs,0.0,embed,mrr@10,0.7610252748898308,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251013-031903-agg.csv
+ID-ZH,ID docs,10.0,embed,mrr@10,0.7653109356950333,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251013-031918-agg.csv
+ID-ZH,ID docs,30.0,embed,mrr@10,0.7636070465922226,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251013-031932-agg.csv
+ID-ZH,ID docs,50.0,embed,mrr@10,0.7556288238565875,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251013-031948-agg.csv
+ID-ZH,ID docs,70.0,embed,mrr@10,0.7222751679288075,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251013-032003-agg.csv
+ID-ZH,ID docs,90.0,embed,mrr@10,0.6420174988234295,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251013-032017-agg.csv
+ID-ZH,ID docs,100.0,embed,mrr@10,0.5938764814101748,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251013-032032-agg.csv
+ID-ZH,ID docs,0.0,embed,r@10,0.9205413297394428,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251013-031903-agg.csv
+ID-ZH,ID docs,10.0,embed,r@10,0.921552111410602,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251013-031918-agg.csv
+ID-ZH,ID docs,30.0,embed,r@10,0.9267183288409702,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251013-031932-agg.csv
+ID-ZH,ID docs,50.0,embed,r@10,0.914027403414196,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251013-031948-agg.csv
+ID-ZH,ID docs,70.0,embed,r@10,0.8949910152740342,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251013-032003-agg.csv
+ID-ZH,ID docs,90.0,embed,r@10,0.8398472596585805,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251013-032017-agg.csv
+ID-ZH,ID docs,100.0,embed,r@10,0.7916666666666667,mmarco,100000,bge-m3,mmarco-100000-indonesian-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251013-032032-agg.csv
+ID-ZH,ZH docs,0.0,embed,ndcg@10,0.6272205134507739,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251013-043357-agg.csv
+ID-ZH,ZH docs,10.0,embed,ndcg@10,0.6698676759079191,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251013-043411-agg.csv
+ID-ZH,ZH docs,30.0,embed,ndcg@10,0.7451216586421457,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251013-043425-agg.csv
+ID-ZH,ZH docs,50.0,embed,ndcg@10,0.7784966290503043,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251013-043440-agg.csv
+ID-ZH,ZH docs,70.0,embed,ndcg@10,0.7876078230267839,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251013-043454-agg.csv
+ID-ZH,ZH docs,90.0,embed,ndcg@10,0.7844067393862545,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251013-043508-agg.csv
+ID-ZH,ZH docs,100.0,embed,ndcg@10,0.7791911272026055,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251013-043523-agg.csv
+ID-ZH,ZH docs,0.0,embed,mrr@10,0.5843847601933865,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251013-043357-agg.csv
+ID-ZH,ZH docs,10.0,embed,mrr@10,0.6254093933170759,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251013-043411-agg.csv
+ID-ZH,ZH docs,30.0,embed,mrr@10,0.703707269071151,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251013-043425-agg.csv
+ID-ZH,ZH docs,50.0,embed,mrr@10,0.7382080819749289,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251013-043440-agg.csv
+ID-ZH,ZH docs,70.0,embed,mrr@10,0.7493547576263213,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251013-043454-agg.csv
+ID-ZH,ZH docs,90.0,embed,mrr@10,0.7451319364223682,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251013-043508-agg.csv
+ID-ZH,ZH docs,100.0,embed,mrr@10,0.7408112458820012,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251013-043523-agg.csv
+ID-ZH,ZH docs,0.0,embed,r@10,0.7731356693620846,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0_dev_20251013-043357-agg.csv
+ID-ZH,ZH docs,10.0,embed,r@10,0.8223270440251572,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.1_dev_20251013-043411-agg.csv
+ID-ZH,ZH docs,30.0,embed,r@10,0.8855008984725965,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.3_dev_20251013-043425-agg.csv
+ID-ZH,ZH docs,50.0,embed,r@10,0.9149820305480684,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.5_dev_20251013-043440-agg.csv
+ID-ZH,ZH docs,70.0,embed,r@10,0.9168912848158132,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.7_dev_20251013-043454-agg.csv
+ID-ZH,ZH docs,90.0,embed,r@10,0.9145327942497754,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-0.9_dev_20251013-043508-agg.csv
+ID-ZH,ZH docs,100.0,embed,r@10,0.9084681042228212,mmarco,100000,bge-m3,mmarco-100000-chinese-id-zh-5bands-bge-m3/vector_mix/cm-alpha-1_dev_20251013-043523-agg.csv

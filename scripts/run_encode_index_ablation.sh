@@ -89,13 +89,13 @@ declare -A DEVICE_DEFAULT=(
     [qwen3-embedding-8B]="cuda:1"
 )
 
-# Skip flags (set to 0 to run)
-SKIP_E5=${SKIP_E5:-1}
-SKIP_GTE=${SKIP_GTE:-1}
-SKIP_JINA=${SKIP_JINA:-1}
-SKIP_QWEN06=${SKIP_QWEN06:-1}
+# Skip flags (set to 1 to skip a model family)
+SKIP_E5=${SKIP_E5:-0}
+SKIP_GTE=${SKIP_GTE:-0}
+SKIP_JINA=${SKIP_JINA:-0}
+SKIP_QWEN06=${SKIP_QWEN06:-0}
 SKIP_QWEN4=${SKIP_QWEN4:-0}
-SKIP_QWEN8=${SKIP_QWEN8:-1}
+SKIP_QWEN8=${SKIP_QWEN8:-0}
 
 # Subset / FAISS tuning
 SUBSET_NEG_CAP=${SUBSET_NEG_CAP:-100000}   # empty = full corpus per lang
