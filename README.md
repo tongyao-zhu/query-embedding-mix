@@ -1,52 +1,70 @@
-# Query Embedding Mix
+<div align="center">
 
-Code and compact artifacts for the ACL 2026 paper:
-`When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval`
+# When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval
 
-This repository is the cleaned paper-facing version of the earlier experimental workspace. It keeps the core reproduction pipelines, checked-in summary tables, selected example outputs, and final paper figures, while intentionally omitting side tools that are not part of the paper’s main reproducibility story.
+Code implementation for our ACL 2026 paper<br>
+Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
 
-## What Is Included
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.11%2B-green.svg)](requirements.txt)
+[![Paper](https://img.shields.io/badge/paper-ACL%202026-purple.svg)](CITATION.cff)
 
-- Main vector-mix experiments on mMARCO
-- Word-mix validation for `EN-ZH`, `EN-VI`, `ZH-VI`, and `HI-ID`
-- Model-family and scale ablations
-- EN-ZH embedding-space analysis
-- Final compact tables and paper figures
+<img src="assets/figures/triad_ENZH.png" alt="EN-ZH query mixing retrieval curves" width="780">
 
-## What Is Intentionally Omitted
+</div>
 
-These were kept out of this paper repo to reduce clutter:
+This repository contains the code implementation for our paper on mixed-language queries in multilingual dense retrieval.
 
-- `micro_case_tool/`
-- `mmarco_simple_router/`
-- the non-Latin purity appendix workflow
-- large raw `indexes/`, `runs/`, `results/`, and `logs/` trees
+Multilingual users often mix languages in real search queries, but dense retrievers are usually tested with queries written in only one language. We study what happens when the query representation itself is mixed.
 
-## Repository Layout
+Given two parallel query translations, we encode both versions, interpolate their embeddings, normalize the result, and retrieve directly from a FAISS index:
+
+$$
+\tilde{\mathbf e}(\lambda)=
+\frac{(1-\lambda/100)\mathbf e_{L_1}+(\lambda/100)\mathbf e_{L_2}}
+{\left\|(1-\lambda/100)\mathbf e_{L_1}+(\lambda/100)\mathbf e_{L_2}\right\|_2},
+\quad
+\lambda \in \{0,10,30,50,70,90,100\}.
+$$
+
+The main paper study covers 35 language pairs across three document-language settings per pair. We also include a larger 91-pair result table for readers who want to explore beyond the paper subset.
+
+## Main Results 🔎
+
+| Question | What we find |
+| --- | --- |
+| ✅ Does mixing help? | Yes, often. The best mixed query embedding beats the better monolingual endpoint in 88/105 main BGE-M3 settings. |
+| 🇬🇧 When does mixing fail? | Almost all failures happen when English documents are in the index. |
+| 🧭 What role does English play? | English behaves asymmetrically: it is the strongest partner for non-English document retrieval, but adding non-English signal to English-document retrieval usually does not help. |
+| 🎚️ Where is the best ratio? | Monolingual document indexes usually prefer a query vector that leans toward the document language, but not always the pure endpoint. |
+| 🌐 Do language factors matter? | After controlling for English dominance, larger typological distance is associated with smaller mixing gains. |
+
+<p align="center">
+  <img src="assets/figures/delta_distribution_all.png" alt="Delta distribution" width="48%">
+  <img src="assets/figures/en_in_index_split.png" alt="English in index split" width="48%">
+</p>
+
+<p align="center">
+  <img src="assets/figures/lambda_star_summary.png" alt="Best mixing ratio summary" width="48%">
+  <img src="assets/figures/typology_scatter.png" alt="Typology scatter" width="48%">
+</p>
+
+## What You Will Find Here 📦
 
 ```text
-query-embedding-mix/
-├── query_embedding_mix/   # core Python code
-├── scripts/               # experiment entrypoints
-├── configs/               # small checked-in metadata / qid filters
-├── artifacts/
-│   ├── tables/            # compact summary CSVs used in the paper
-│   ├── analysis/          # checked-in EN-ZH embedding-space outputs
-│   └── examples/          # small example result bundles
-├── assets/figures/        # final paper figures
-├── requirements.txt
-└── README.md
+query_embedding_mix/   Python code for indexing, retrieval, mixing, and analysis
+scripts/               Scripts for reproducing the main experiments
+artifacts/tables/      Result tables used by the paper
+assets/figures/        Paper figures shown above
+configs/               Language metadata and qid filters
+docs/                  Reproduction notes, ablations, appendix workflows, and paper maps
 ```
 
-Generated runtime directories are still expected under the repo root when you run experiments:
+Large generated directories such as `data/`, `indexes/`, `runs/`, `results/`, and `logs/` are ignored so the repo stays easy to clone.
 
-- `data/`
-- `indexes/`
-- `runs/`
-- `results/`
-- `logs/`
+## Reproduce The Main Run 🚀
 
-## Setup
+Install the environment first:
 
 ```bash
 conda create -n query-mix python=3.11.13 -y
@@ -55,19 +73,7 @@ conda install -c conda-forge faiss-gpu=1.8.0 -y
 pip install -r requirements.txt
 ```
 
-For word-mix generation, install the Stanza tokenizers you need:
-
-```bash
-python - <<'PY'
-import stanza
-for lang in ["en", "zh", "vi", "hi", "id"]:
-    stanza.download(lang)
-PY
-```
-
-## Main Reproduction
-
-### 1) Download mMARCO queries
+Then download aligned mMARCO development queries:
 
 ```bash
 python query_embedding_mix/download_mmarco_queries.py \
@@ -76,114 +82,49 @@ python query_embedding_mix/download_mmarco_queries.py \
   --languages english chinese french german italian spanish portuguese dutch russian japanese arabic hindi indonesian vietnamese
 ```
 
-### 2) Build the BGE-M3 indexes
+Run the main vector-mix pipeline:
 
 ```bash
 bash scripts/run_encode_index_groups.sh
-```
 
-### 3) Run all vector-mix experiments
-
-```bash
 INDEX_ROOT=./indexes/idx-mmarco-bge-m3-sub8841823 \
 bash scripts/run_all_vector_pairs.sh
-```
 
-### 4) Collect the main tables
-
-```bash
 python query_embedding_mix/collect_results.py \
   ./results/mmarco_full \
   --output ./artifacts/tables/full_mmarco_results.csv \
   --processed-out ./artifacts/tables/full_mmarco_processed_results.csv
 ```
 
-## Word-Mix Validation
-
-The word-mix appendix workflow uses four pairs:
-
-- `EN-ZH`
-- `EN-VI`
-- `ZH-VI`
-- `HI-ID`
-
-Generate code-mixed query bands:
-
-```bash
-bash scripts/generate_word_mix.sh
-```
-
-Then reproduce retrieval with both word-mix and embedding-mix:
-
-```bash
-bash scripts/reproduce_word_mix.sh
-```
-
-Checked-in compact summaries for this appendix workflow are available at:
-
-- `artifacts/tables/word_mix_curves.csv`
-- `artifacts/tables/word_mix_processed.csv`
-
-The shared qid filter used by default is checked in at:
-
-- `configs/qid_lists/en_zh_min.ge6.tsv`
-
-## Ablations
-
-Build ablation indexes:
-
-```bash
-bash scripts/run_encode_index_ablation.sh
-```
-
-Run the ablation matrix:
-
-```bash
-bash scripts/run_ablation.sh
-```
-
-Collect the ablation tables:
-
-```bash
-python query_embedding_mix/collect_ablation_results.py \
-  ./results/mmarco_full/ablation2 \
-  --output ./artifacts/tables/ablation_results.csv \
-  --processed-out ./artifacts/tables/ablation_processed_results.csv
-```
-
-## EN-ZH Embedding-Space Analysis
-
-This analysis is only for the `EN-ZH` pair. It is intentionally named explicitly in this repo.
-
-Run:
-
-```bash
-python query_embedding_mix/en_zh_embedding_space_analysis.py \
-  --en_file data/mmarco_dev/queries.en.tsv \
-  --zh_file data/mmarco_dev/queries.zh.tsv \
-  --cm_files data/mmarco_dev/queries_cm_5_bands_5-mini/queries-cm0-20.tsv data/mmarco_dev/queries_cm_5_bands_5-mini/queries-cm20-40.tsv data/mmarco_dev/queries_cm_5_bands_5-mini/queries-cm40-60.tsv data/mmarco_dev/queries_cm_5_bands_5-mini/queries-cm60-80.tsv data/mmarco_dev/queries_cm_5_bands_5-mini/queries-cm80-100.tsv \
-  --cm_labels 0-20 20-40 40-60 60-80 80-100 \
-  --qids_common_file data/mmarco_dev/queries_cm_5_bands_5-mini/qids-common.tsv \
-  --model_name BAAI/bge-m3 \
-  --output_dir artifacts/analysis/en_zh_embedding_space
-```
-
-## Checked-In Artifacts
-
-- `artifacts/tables/`: compact paper-facing CSV summaries
-- `artifacts/tables/word_mix_*.csv`: compact word-mix appendix summaries
-- `artifacts/analysis/en_zh_embedding_space/`: checked-in EN-ZH geometry outputs
-- `artifacts/examples/repro_en_zh_example/`: small example result bundle
-- `assets/figures/`: final figures used in the paper
-
-To regenerate the figures from the checked-in tables:
+You can also regenerate the figures and paper values from the included tables:
 
 ```bash
 python query_embedding_mix/plot_paper_figures.py
+python query_embedding_mix/calculate_paper_values.py
 ```
 
-To recompute the printed paper statistics from the checked-in tables:
+The full command list, including word-mix validation and ablations, is in [docs/REPRODUCTION.md](docs/REPRODUCTION.md).
 
-```bash
-python query_embedding_mix/calculate_paper_values.py
+## Where To Go Next 🧭
+
+| If you want to... | Go here |
+| --- | --- |
+| Understand how the paper maps to this repo | [docs/paper/README.md](docs/paper/README.md) |
+| Reproduce the main experiments | [docs/REPRODUCTION.md](docs/REPRODUCTION.md) |
+| Inspect the included result files | [docs/ARTIFACTS.md](docs/ARTIFACTS.md) |
+| Run word-mix validation | [docs/appendix/README.md](docs/appendix/README.md) |
+| Study model-family and scale ablations | [docs/ablations/README.md](docs/ablations/README.md) |
+| Find the role of each script | [scripts/README.md](scripts/README.md) |
+
+## Citation ✍️
+
+If this code is useful for your research, please cite our ACL 2026 paper:
+
+```bibtex
+@inproceedings{zhu2026queryembeddingmix,
+  title     = {When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval},
+  author    = {Zhu, Tongyao and Huang, Chao-Ming and Kan, Min-Yen},
+  booktitle = {Proceedings of the Annual Meeting of the Association for Computational Linguistics},
+  year      = {2026}
+}
 ```

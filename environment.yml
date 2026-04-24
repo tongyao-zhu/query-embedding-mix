@@ -1,0 +1,9 @@
+name: query-mix
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11.13
+  - pip
+  - faiss-gpu=1.8.0
+  - pip:
+      - -r requirements.txt
