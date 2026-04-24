@@ -1,4 +1,4 @@
-# [ACL 2026] When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval
+# 🌐 [ACL 2026] When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval
 
 Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
 
@@ -26,11 +26,9 @@ Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
   </tr>
 </table>
 
-This repository contains the code implementation for our paper on mixed-language queries in multilingual dense retrieval.
+This repository accompanies our ACL 2026 paper on mixed-language queries in multilingual dense retrieval. 🌍🔎 Multilingual users often mix languages in real search queries, but dense retrievers are usually evaluated on monolingual ones — we study what happens when the query representation itself is mixed.
 
-Multilingual users often mix languages in real search queries, but dense retrievers are usually tested with queries written in only one language. We study what happens when the query representation itself is mixed.
-
-Given two parallel query translations, we encode both versions, interpolate their embeddings, normalize the result, and retrieve directly from a FAISS index:
+Given two parallel query translations, we encode both versions, interpolate their embeddings, normalize the result, and retrieve directly from a FAISS index. 🧩
 
 $$
 \tilde{\mathbf e}(\lambda)=
@@ -40,7 +38,7 @@ $$
 \lambda \in \{0,10,30,50,70,90,100\}.
 $$
 
-The main paper study covers 35 language pairs across three document-language settings per pair. We also include a larger 91-pair result table for readers who want to explore beyond the paper subset.
+Our main study covers 35 language pairs across three document-language settings per pair. We also include a larger 91-pair result table for readers who want to explore beyond the paper subset.
 
 ## Main Results 🔎
 
@@ -49,7 +47,7 @@ The main paper study covers 35 language pairs across three document-language set
 | ✅ Does mixing help? | Yes, often. The best mixed query embedding beats the better monolingual endpoint in 88/105 main BGE-M3 settings. |
 | 🇬🇧 When does mixing fail? | Almost all failures happen when English documents are in the index. |
 | 🧭 What role does English play? | English behaves asymmetrically: it is the strongest partner for non-English document retrieval, but adding non-English signal to English-document retrieval usually does not help. |
-| 🎚️ Where is the best ratio? | Monolingual document indexes usually prefer a query vector that leans toward the document language, but not always the pure endpoint. |
+| ⚖️ Where is the best ratio? | Monolingual document indexes usually prefer a query vector that leans toward the document language, but not always the pure endpoint. |
 | 🌐 Do language factors matter? | After controlling for English dominance, larger typological distance is associated with smaller mixing gains. |
 
 <p align="center">
@@ -73,7 +71,7 @@ configs/               Language metadata and qid filters
 docs/                  Reproduction notes, ablations, appendix workflows, and paper maps
 ```
 
-Large generated directories such as `data/`, `indexes/`, `runs/`, `results/`, and `logs/` are ignored so the repo stays easy to clone.
+Large generated directories such as `data/`, `indexes/`, `runs/`, `results/`, and `logs/` are gitignored to keep the repo lightweight.
 
 ## Reproduce The Main Run 🚀
 
@@ -116,7 +114,7 @@ python query_embedding_mix/plot_paper_figures.py
 python query_embedding_mix/calculate_paper_values.py
 ```
 
-The full command list, including word-mix validation and ablations, is in [docs/REPRODUCTION.md](docs/REPRODUCTION.md).
+See [docs/REPRODUCTION.md](docs/REPRODUCTION.md) for the full command list, including word-mix validation and ablations.
 
 ## Where To Go Next 🧭
 
