@@ -1,0 +1,14 @@
+.env
+__pycache__/
+indexes/
+results/
+runs/
+micro_case_tool/micro_cases/
+micro_case_tool/micro_reports/
+micro_case_tool/micro_reports_purity/
+mmarco_simple_router/artifacts/
+replication_artifacts/
+replication_logs/
+index_logs/
+index_logs_ablation/
+logs/

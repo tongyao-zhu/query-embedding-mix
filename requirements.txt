@@ -1,0 +1,29 @@
+# Pinned to ir-lab-3 (Python 3.11.13, CUDA 11.8)
+--extra-index-url https://download.pytorch.org/whl/cu118
+
+torch==2.6.0+cu118
+numpy==1.26.4
+pandas==2.3.0
+tqdm==4.67.1
+datasets==3.6.0
+transformers==4.53.0
+sentence-transformers==5.0.0
+sentencepiece==0.2.0
+ir_measures==0.3.7
+pytrec_eval==0.5
+scipy==1.16.0
+matplotlib==3.10.5
+scikit-learn==1.7.1
+plotly==6.3.0
+umap-learn==0.5.9.post2
+
+# Code-mix data generation (generate_cm_bands.py + mix_count.py)
+openai==1.99.6
+python-dotenv==1.1.1
+tenacity==9.1.2
+stanza==1.10.1
+regex==2024.11.6
+langid==1.1.6
+
+# Some conda installs of `requests` omit charset detection extras.
+charset-normalizer
