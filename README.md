@@ -9,7 +9,25 @@ Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
 [![Python](https://img.shields.io/badge/python-3.11%2B-green.svg)](requirements.txt)
 [![Paper](https://img.shields.io/badge/paper-ACL%202026-purple.svg)](CITATION.cff)
 
-<img src="assets/figures/triad_ENZH.png" alt="EN-ZH query mixing retrieval curves" width="780">
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <img src="assets/figures/teaser_diagram.png" alt="Paper Figure 1: study protocol" width="100%">
+      <br>
+      <sub>Paper Fig. 1: study protocol</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/figures/embed-mix_diagram.png" alt="Paper Figure 2: embedding-level query mixing" width="100%">
+      <br>
+      <sub>Paper Fig. 2: embedding mix</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/figures/triad_ENZH.png" alt="EN-ZH query mixing retrieval curves" width="100%">
+      <br>
+      <sub>Main EN-ZH curve</sub>
+    </td>
+  </tr>
+</table>
 
 </div>
 
