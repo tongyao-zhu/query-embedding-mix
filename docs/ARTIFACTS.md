@@ -17,13 +17,19 @@ This repository is designed to be useful without committing large runtime produc
 | `artifacts/examples/repro_en_zh_example/` | Small EN-ZH example result bundle for readers. |
 | `assets/figures/` | Paper figures generated from compact tables and analyses. |
 
+## External Releases
+
+| Path | Purpose |
+| --- | --- |
+| [hcm777/query-embedding-mix-word-mix](https://huggingface.co/datasets/hcm777/query-embedding-mix-word-mix) | Released word-mix query bundles for `en-zh`, `en-vi`, `zh-vi`, and `hi-id`, hosted off-repo on Hugging Face. |
+
 ## Not Checked In
 
 These are expected to be generated locally:
 
 | Path | Contents |
 | --- | --- |
-| `data/` | Downloaded mMARCO queries, generated code-mixed queries, qrels caches. |
+| `data/` | Downloaded mMARCO queries, locally generated code-mixed queries, and qrels caches. The released word-mix query bundles live on Hugging Face instead of in the repo. |
 | `indexes/` | FAISS indexes and document-id maps. |
 | `runs/` | TREC run files and intermediate run products. |
 | `results/` | Raw evaluation outputs before collection. |
@@ -69,6 +75,6 @@ Please keep artifacts small and reviewable:
 
 - Prefer compact CSV, JSON, Markdown, text, PNG, or PDF files.
 - Include the command or script that generated the artifact.
-- Avoid committing raw benchmark data, private API generations, full FAISS indexes, or logs.
+- Avoid committing raw benchmark data, private API generations, full FAISS indexes, or logs. Host release-sized generated bundles separately when needed.
 - Put final paper figures under `assets/figures/`.
 - Put compact numeric outputs under `artifacts/tables/`.

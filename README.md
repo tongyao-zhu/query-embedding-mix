@@ -72,6 +72,7 @@ docs/                  Reproduction notes, ablations, appendix workflows, and pa
 ```
 
 Large generated directories such as `data/`, `indexes/`, `runs/`, `results/`, and `logs/` are gitignored to keep the repo lightweight.
+The released word-mix query bundles used by the paper are hosted separately on Hugging Face and are not checked into this repository: [hcm777/query-embedding-mix-word-mix](https://huggingface.co/datasets/hcm777/query-embedding-mix-word-mix). If you use that dataset, you can skip `scripts/generate_word_mix.sh` and go straight to the word-mix retrieval workflow.
 
 ## Reproduce The Main Run 🚀
 
@@ -124,6 +125,7 @@ See [docs/REPRODUCTION.md](docs/REPRODUCTION.md) for the full command list, incl
 | Reproduce the main experiments | [docs/REPRODUCTION.md](docs/REPRODUCTION.md) |
 | Inspect the included result files | [docs/ARTIFACTS.md](docs/ARTIFACTS.md) |
 | Run word-mix validation | [docs/appendix/README.md](docs/appendix/README.md) |
+| Download the released word-mix query bundles | [Hugging Face dataset](https://huggingface.co/datasets/hcm777/query-embedding-mix-word-mix) |
 | Study model-family and scale ablations | [docs/ablations/README.md](docs/ablations/README.md) |
 | Find the role of each script | [scripts/README.md](scripts/README.md) |
 

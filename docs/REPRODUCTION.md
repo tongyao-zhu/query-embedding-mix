@@ -85,6 +85,35 @@ for lang in ["en", "zh", "vi", "hi", "id"]:
 PY
 ```
 
+The paper-release word-mix query bundles are hosted on Hugging Face instead of being checked into this repo:
+
+```text
+https://huggingface.co/datasets/hcm777/query-embedding-mix-word-mix
+```
+
+To use the released bundles with the default local paths expected by `scripts/reproduce_word_mix.sh`, download the raw directories and copy them into `data/mmarco_dev/`:
+
+```bash
+hf download hcm777/query-embedding-mix-word-mix \
+  --repo-type dataset \
+  --include "raw/*" \
+  --local-dir /tmp/query-embedding-mix-word-mix
+
+mkdir -p data/mmarco_dev
+cp -r /tmp/query-embedding-mix-word-mix/raw/en-zh data/mmarco_dev/queries_cm_5_bands_5-mini
+cp -r /tmp/query-embedding-mix-word-mix/raw/en-vi data/mmarco_dev/queries_cm_5_bands_en_vi_5-mini
+cp -r /tmp/query-embedding-mix-word-mix/raw/zh-vi data/mmarco_dev/queries_cm_5_bands_zh_vi_5-mini
+cp -r /tmp/query-embedding-mix-word-mix/raw/hi-id data/mmarco_dev/queries_cm_5_bands_hi_id_5-mini
+```
+
+If you use the released Hugging Face bundles, you can skip `bash scripts/generate_word_mix.sh` and go directly to:
+
+```bash
+bash scripts/reproduce_word_mix.sh
+```
+
+Only follow the generation step below if you want to regenerate the word-mix query text yourself.
+
 Prepare API credentials for `generate_cm_bands.py`. By default, the script reads `.env` and uses an OpenAI-compatible endpoint configured for OpenRouter. A safe template is provided in `.env.example`.
 
 Generate word-mixed query bands:
