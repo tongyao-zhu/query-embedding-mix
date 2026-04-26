@@ -5,15 +5,6 @@ This guide documents the commands used by the public repo. Full mMARCO runs requ
 ## 1. Environment
 
 ```bash
-conda create -n query-mix python=3.11.13 -y
-conda activate query-mix
-conda install -c conda-forge faiss-gpu=1.8.0 -y
-pip install -r requirements.txt
-```
-
-Or:
-
-```bash
 conda env create -f environment.yml
 conda activate query-mix
 ```

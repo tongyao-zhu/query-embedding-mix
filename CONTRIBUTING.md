@@ -13,10 +13,8 @@ Thank you for helping make this research repo easier to reproduce and extend.
 ## Development Setup
 
 ```bash
-conda create -n query-mix python=3.11.13 -y
+conda env create -f environment.yml
 conda activate query-mix
-conda install -c conda-forge faiss-gpu=1.8.0 -y
-pip install -r requirements.txt
 ```
 
 For documentation-only changes, no GPU setup is needed.

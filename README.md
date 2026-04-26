@@ -79,10 +79,8 @@ The released word-mix query bundles used by the paper are hosted separately on H
 Install the environment first:
 
 ```bash
-conda create -n query-mix python=3.11.13 -y
+conda env create -f environment.yml
 conda activate query-mix
-conda install -c conda-forge faiss-gpu=1.8.0 -y
-pip install -r requirements.txt
 ```
 
 Then download aligned mMARCO development queries:
