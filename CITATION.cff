@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this repository or embedding-mix protocol, please cite the ACL 2026 paper."
+title: "When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval"
+type: software
+authors:
+  - family-names: Zhu
+    given-names: Tongyao
+  - family-names: Huang
+    given-names: Chao-Ming
+  - family-names: Kan
+    given-names: Min-Yen
+repository-code: "https://github.com/tongyao-zhu/query-embedding-mix"
+license: Apache-2.0
+preferred-citation:
+  type: conference-paper
+  title: "When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval"
+  authors:
+    - family-names: Zhu
+      given-names: Tongyao
+    - family-names: Huang
+      given-names: Chao-Ming
+    - family-names: Kan
+      given-names: Min-Yen
+  collection-title: "Proceedings of the Annual Meeting of the Association for Computational Linguistics"
+  year: 2026
