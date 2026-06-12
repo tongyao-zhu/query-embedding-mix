@@ -26,7 +26,7 @@ Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
   </tr>
 </table>
 
-This repository accompanies our ACL 2026 paper, [When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval](https://arxiv.org/abs/2606.13537), on mixed-language queries in multilingual dense retrieval. 🌍🔎 Multilingual users often mix languages in real search queries, but dense retrievers are usually evaluated on monolingual ones — we study what happens when the query representation itself is mixed.
+This repository accompanies our ACL 2026 oral paper, [When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval](https://arxiv.org/abs/2606.13537), on mixed-language queries in multilingual dense retrieval. 🌍🔎 Multilingual users often mix languages in real search queries, but dense retrievers are usually evaluated on monolingual ones — we study what happens when the query representation itself is mixed.
 
 Given two parallel query translations, we encode both versions, interpolate their embeddings, normalize the result, and retrieve directly from a FAISS index. 🧩
 
