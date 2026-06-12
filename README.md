@@ -4,7 +4,7 @@ Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/python-3.11%2B-green.svg)](requirements.txt)
-[![Paper](https://img.shields.io/badge/paper-ACL%202026-purple.svg)](CITATION.cff)
+[![Paper](https://img.shields.io/badge/paper-arXiv%3A2606.13537-purple.svg)](https://arxiv.org/abs/2606.13537)
 
 <table>
   <tr>
@@ -26,7 +26,7 @@ Tongyao Zhu, Chao-Ming Huang, and Min-Yen Kan
   </tr>
 </table>
 
-This repository accompanies our ACL 2026 paper on mixed-language queries in multilingual dense retrieval. 🌍🔎 Multilingual users often mix languages in real search queries, but dense retrievers are usually evaluated on monolingual ones — we study what happens when the query representation itself is mixed.
+This repository accompanies our ACL 2026 paper, [When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval](https://arxiv.org/abs/2606.13537), on mixed-language queries in multilingual dense retrieval. 🌍🔎 Multilingual users often mix languages in real search queries, but dense retrievers are usually evaluated on monolingual ones — we study what happens when the query representation itself is mixed.
 
 Given two parallel query translations, we encode both versions, interpolate their embeddings, normalize the result, and retrieve directly from a FAISS index. 🧩
 
@@ -132,10 +132,13 @@ See [docs/REPRODUCTION.md](docs/REPRODUCTION.md) for the full command list, incl
 If this code is useful for your research, please cite our ACL 2026 paper:
 
 ```bibtex
-@inproceedings{zhu2026queryembeddingmix,
-  title     = {When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval},
-  author    = {Zhu, Tongyao and Huang, Chao-Ming and Kan, Min-Yen},
-  booktitle = {Proceedings of the Annual Meeting of the Association for Computational Linguistics},
-  year      = {2026}
+@misc{zhu2026doesmixinghelpanalyzing,
+      title={When Does Mixing Help? Analyzing Query Embedding Interpolation in Multilingual Dense Retrieval},
+      author={Tongyao Zhu and Chao-Ming Huang and Min-Yen Kan},
+      year={2026},
+      eprint={2606.13537},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2606.13537},
 }
 ```
